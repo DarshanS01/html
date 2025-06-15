@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+     <body>
+            input year:<input type="text" id="year">
+            <input type="button"id="button"onClick="isLeapYear()"value="check leap year">
+            <p id="pid"></p>
+            <script>
+                function isLeapYear(){
+                    var year=document.getElementById("year").value;
+                    document.getElementById("pid").innerHTML=(year%100===0)?(year%400===0):(year%4===0)
+                }
+            </script>
+        </body>
+</html>
